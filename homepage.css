@@ -1,0 +1,84 @@
+img:hover {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
+body{
+  background-color: #ffe2e2;
+  
+}
+
+.jumbotron{
+  background-color: #f5f4f4;
+  border-left:0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+}
+
+.card-text{
+  font-family:"Helvetica";
+  animation: fadeInAnimation ease 5s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+}
+
+.card-title{
+  font-family:"Trebuchet MS";
+  font-weight: "bold";
+  animation: fadeInAnimation ease 5s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+  
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
+
+h1{
+	border-right: solid 5px orange;
+	white-space: nowrap;
+	overflow: hidden;    
+	font-family: 'Tahoma';  
+	color: #312c51;
+	margin: 0 auto;
+	animation: 
+	animated-text 4s steps(50,end) 1s 1 normal both,
+    animated-cursor 600ms steps(50,end) infinite;
+}
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 485px;}
+}
+
+@keyframes animated-cursor{
+  from{border-right-color: orange;}
+  to{border-right-color: transparent;}
+}
+
+img{
+  width: 150px;
+  height: 150px;  
+  border-radius: 50%; 
+  position: relative; 
+  top: 10px; 
+  left: 20px; 
+  transition: transform .2s;
+}
+
+footer{
+  background-color: #f6f6f6;
+  margin: auto;
+  padding-left: 47%;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  font-size: 10px;
+  color: #aa8976;
+}
